@@ -1,0 +1,7 @@
+/*Query the list of CITY names ending with vowels (a, e, i, o, u) from STATION. Your result cannot contain duplicates.
+Input Format
+The STATION table is described as follows:
+https://www.hackerrank.com/challenges/weather-observation-station-7/problem
+*/
+
+select distinct city from station where right(city,1) in ('a','e','i','o','u')
